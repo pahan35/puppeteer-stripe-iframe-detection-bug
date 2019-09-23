@@ -44,7 +44,12 @@ const headless = !!process.env.HEADLESS
 
   await page.goto('https://stripe-payments-demo.appspot.com')
 
-  const stripeFrame = await waitForFrame('privateStripeFrame')
-  await stripeFrame.waitFor('body')
-  console.log('Body found successfully')
+  try {
+    const stripeFrame = await waitForFrame('privateStripeFrame')
+    await stripeFrame.waitFor('body')
+    console.log('Body found successfully')
+  } catch (e) {
+    console.error(e)
+  }
+  process.exit()
 })()
