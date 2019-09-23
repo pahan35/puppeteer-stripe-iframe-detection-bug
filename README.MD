@@ -13,7 +13,7 @@ Stripe frame is not detected and we can't run further logic with it.
 # Extra info which I noticed during debugging the problem
 During debugging the problem I noticed that when I run puppeteer in `headless: false` mode there is no `framenavigated` event from Stripe iframes and instead of it I see frame detached events nearly right after attaching
 
-[Recorded example]()
+[Recorded example](http://recordit.co/0iaxEByCt7)
 
 # Environment
 - OS - MacOS 10.14.6
