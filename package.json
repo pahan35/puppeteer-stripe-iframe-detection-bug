@@ -1,0 +1,16 @@
+{
+  "name": "puppeteer-stripe-iframe-detection-bug",
+  "version": "1.0.0",
+  "description": "Simple script which reproduces bug with Stripe iframe detection with {headless: false}",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "start-headless": "HEADLESS=1 node index.js"
+  },
+  "keywords": [],
+  "author": "pavlo@lawinsider.com",
+  "license": "ISC",
+  "devDependencies": {
+    "puppeteer": "^1.20.0"
+  }
+}
